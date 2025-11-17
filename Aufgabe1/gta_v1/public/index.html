@@ -26,10 +26,31 @@
             <h2>Tagging</h2>
 
             <!-- ############### VS1Lab 1a Form 1 Start -->
-            <form id="tag-form" action="/tagging" method="post">
+             <form id="tag-form" action="/tagging" method="post"></form>
+                <fieldset id="tag-form_fieldset">
+                    <legend id="tag-form_legend">Add a new GeoTag</legend>
+                        
+                        <br>
+                        <label id="latitude_label">Latitude</label><br>
+                        <input type="text" id="latitude_input" value="49.01379" readonly>
+                        <br><br>
 
-                <!-- ... your code here ... -->
+                        <label id="longitude_label">Longitude</label><br>
+                        <input type="text" id="longitude_input" value="8.404435" readonly>
+                        <br><br>
 
+                        <label id="name_label">Name</label><br>
+                        <input type="text" id="name_input" placeholder="e.g. Koeri-Werk" maxlength="10" required>
+                        <br><br>
+
+                        <label id="hashtag_label">Hashtag</label><br>
+                        <input type="text" id="hashtag_input" placeholder="e.g. #essen" pattern="#[A-Za-z]" maxlength="11">
+                        <br><br>
+
+                        <input type="submit" id="tag-form_submit_button" value="Create Tag">
+                        <br><br>
+
+                </fieldset>
             </form>
             <!-- ############### VS1Lab 1a Form 1 End -->
 
@@ -41,8 +62,19 @@
             <!-- ############### VS1Lab 1a Form 2 Start -->
             <form class="discovery__search" id="discoveryFilterForm" action="/discovery" method="post">
 
-                <!-- ... your code here ... -->
+                <fieldset id="discovery-search_fieldset">
+                    <legend id="discovery-search_legend">Search</legend>
 
+                        <br>
+                        <label id="discovery-search_label">Search Term</label><br>
+                        <input type="text" id="discovery-search_input" placeholder="e.g. Hochschule Karlsruhe ">
+                        <br><br>
+
+                        <input type="submit" id="discovery-search_submit_button" value="Search">
+                        <input type="submit" id="discovery-search_random_button" value="I'm Feeling Lucky">
+                        <br><br>
+
+                </fieldset>
             </form>
             <!-- ############### VS1Lab 1a Form 2 End -->
 

@@ -25,7 +25,7 @@ html {
 
 :root {
   --link-color: #00B7FF;
-  --background-color: #efefef;
+  --background-color: #dbf5ff;
   --border-color: #cdcdcd;
   --gray-color: #666;
 }
@@ -110,18 +110,40 @@ a {
 /* ### TODO ### Styles for Header Component */
 
 .header {
-  padding: 50px 0;
-  background-color: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px;
+  background-color: var(--background-color);
 }
 
 .header img{
-  height: 50px;
+  height: 100px;
+}
+
+.header .header__image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header__navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
 }
 
 .header .header-elements{
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 90%;
   margin: 0 auto;
   max-width: 2000px;
@@ -248,10 +270,9 @@ a {
 
 .footer{
   height: 100px;
-  background-color: var(--border-color);
+  background-color: var(--background-color);
   display: flex;
   align-items: center;
-  
 }
 
 .footer span{

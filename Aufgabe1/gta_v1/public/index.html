@@ -14,9 +14,7 @@
 
 <body>
     <header class="header">
-        <div class="header__image" ">
-            <img src="./images/location.png" alt="an image of a map and location">
-        </div>
+        <img src="./images/location.png" class="header__image" alt="an image of a map and location">
         <h1 class="header__title">GeoTagApp</h1>
         <nav class="header__navigation">
             <a href="#">About</a> | <a href="#">Help</a> | <a href="/">Home</a>
@@ -32,16 +30,16 @@
                 <fieldset id="tag-form_fieldset">
                     <legend id="tag-form_legend">Add a new GeoTag</legend>
                         
-                        <label id="latitude_label">Latitude</label><br>
+                        <label id="latitude_label">Latitude</label>
                         <input type="text" id="latitude_input" value="49.01379" readonly>
 
-                        <label id="longitude_label">Longitude</label><br>
+                        <label id="longitude_label">Longitude</label>
                         <input type="text" id="longitude_input" value="8.404435" readonly>
 
-                        <label id="name_label">Name</label><br>
+                        <label id="name_label">Name</label>
                         <input type="text" id="name_input" placeholder="e.g. Koeri-Werk" maxlength="10" required>
 
-                        <label id="hashtag_label">Hashtag</label><br>
+                        <label id="hashtag_label">Hashtag</label>
                         <input type="text" id="hashtag_input" placeholder="e.g. #essen" pattern="#[A-Za-z]" maxlength="11">
 
                         <input type="submit" id="tag-form_submit_button" value="Create Tag">
@@ -61,7 +59,7 @@
                 <fieldset id="discovery-search_fieldset">
                     <legend id="discovery-search_legend">Search</legend>
 
-                        <label id="discovery-search_label">Search Term</label><br>
+                        <label id="discovery-search_label">Search Term</label>
                         <input type="text" id="discovery-search_input" placeholder="e.g. Hochschule Karlsruhe ">
 
                         <input type="submit" id="discovery-search_submit_button" value="Search">
